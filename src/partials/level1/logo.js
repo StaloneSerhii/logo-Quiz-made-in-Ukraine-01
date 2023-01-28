@@ -20,3 +20,4 @@ const showInputLogo = `<div><img src="./img/${logoHidden}" width = 100px alt="${
 
 list.innerHTML = ('beforeend', showInputLogo)
 }
+console.log("start");
