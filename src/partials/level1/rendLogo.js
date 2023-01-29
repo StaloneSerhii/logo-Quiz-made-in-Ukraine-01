@@ -25,6 +25,7 @@ const logoClick = document.querySelector('.logoList');
 logoClick.addEventListener('click', renderInputLogo);
 
 function renderInputLogo(e) {
+  console.log(e.currentTarget);
   let numLogo = e.target.alt;
   const { logoHidden, idName, answer, logo, info } = level1[numLogo];
 
