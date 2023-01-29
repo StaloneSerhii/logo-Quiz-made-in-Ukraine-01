@@ -1,7 +1,20 @@
 import { level1 } from './levelRend';
-export function peredas(){
-    level1
+
+// Рендер логотипів рівня \\
+
+const rend = document.querySelector('.logoList');
+const addRend = rendLogo(level1);
+rend.insertAdjacentHTML('beforeend', addRend);
+
+function rendLogo(level1) {
+  return level1
+    .map(({ logoHidden, idName }) => {
+      return `<li><img src="${logoHidden}" alt="${idName}" width="200px" height="150px"/></li>`;
+    })
+    .join('');
 }
+
+// Перевірка і рендер інпуту логотипа \\
 
 const logoClick = document.querySelector('.logoList');
 console.log(logoClick);
@@ -16,13 +29,13 @@ function renderInputLogo(e) {
   if (savedSettings === `${idName}`) {
     rendRinghtAnswer();
     function rendRinghtAnswer() {
-      const rendAnswer = `<div><img src="${logo}" alt="${idName}"height="100" width="100px"><span>${answer}</span><p>${info}</p></div>`;
+      const rendAnswer = `<a href="./level1.html">Назад</a><div><img src="${logo}" alt="${idName}"height="150" width="200px"><span>${answer}</span><p>${info}</p></div>`;
       logoClick.innerHTML = ('beforeend', rendAnswer);
     }
   } else {
     rendAnsw();
     function rendAnsw() {
-      const renderInput = `<div><img src="${logoHidden}" alt="${idName}"height="100" width="100px"><form class="sendBtn"><input type="text"><button >answer</button></form></div>`;
+      const renderInput = `<a href="./level1.html">Назад</a><div><img src="${logoHidden}" alt="${idName}"height="150" width="200px"><form class="sendBtn"><input type="text"><button >answer</button></form></div>`;
       logoClick.innerHTML = ('beforeend', renderInput);
 
       const inputSend = document.querySelector('.sendBtn');
@@ -33,7 +46,7 @@ function renderInputLogo(e) {
         let answerLogo = e.target[0].value;
         if (answerLogo === answer) {
           localStorage.setItem(`${answer}`, `${idName}`);
-          const re = `<div><img src="/${logo}" alt="${idName}"height="100" width="100px"><span>${answer}</span><p>${info}</p></div>`;
+          const re = `<a href="./level1.html">Назад</a><div><img src="${logo}" alt="${idName}"height="150" width="200px"><span>${answer}</span><p>${info}</p></div>`;
           logoClick.innerHTML = ('beforeend', re);
         } else {
           alert('Newirno');
@@ -43,5 +56,3 @@ function renderInputLogo(e) {
   }
 }
 
-const reset = document.querySelector('.reset')
-reset.addEventListener("click", ()=> {localStorage.clear()})
