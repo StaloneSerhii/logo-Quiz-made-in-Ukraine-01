@@ -1,1 +1,0 @@
-{"mappings":"AAAcA,SAASC,cAAc,UAC/BC,iBAAiB,SAAS,KAC9BC,aAAaC,OAAO","sources":["src/servis/index.js"],"sourcesContent":["const reset = document.querySelector('.reset');\nreset.addEventListener('click', () => {\n  localStorage.clear();\n});"],"names":["document","querySelector","addEventListener","localStorage","clear"],"version":3,"file":"index.0304a167.js.map"}
