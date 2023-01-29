@@ -1,4 +1,10 @@
+// Кнопка ресен в опціях
 const reset = document.querySelector('.reset');
+const alertR = document.querySelector('body');
 reset.addEventListener('click', () => {
-  localStorage.clear();
+  alertR.insertAdjacentHTML('beforeend', `<span>Прогрес скинуто</span>`)
+  localStorage.clear()
 });
+
+
+
