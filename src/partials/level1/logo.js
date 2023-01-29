@@ -1,23 +1,44 @@
-import { level1 } from "./levelRend";
-const list = document.querySelector(".listLogo")
-const numLogos = level1.length
-const allLogo = renderLogo(level1)
-list.insertAdjacentHTML("beforeend", allLogo)
-list.addEventListener('click', renderInputLogo)
-let numLogo = '';
-function renderLogo(level1) {
-  return level1.map(({previewLogo, idName}) => {
- 
-   return `<li><img src="./img/${previewLogo}" alt="${idName}" width=80px></li>`
-  }).join('')
-}
+import { level1 } from './levelRend';
+
+const logoClick = document.querySelector('.logoList');
+console.log(logoClick);
+logoClick.addEventListener('click', renderInputLogo);
 
 function renderInputLogo(e) {
-    let altLogoFind = e.target.alt
-const findLogo = level1.findIndex(find => find.idName === altLogoFind)
-const {idName, logoHidden} = level1[findLogo]
-const showInputLogo = `<div><img src="./img/${logoHidden}" width = 100px alt="${idName}"><input type="text"></div>`
+  let numLogo = e.target.alt;
+  const { logoHidden, idName, answer, logo, info } = level1[numLogo];
 
-list.innerHTML = ('beforeend', showInputLogo)
+  const savedSettings = localStorage.getItem(`${answer}`);
+  console.log(savedSettings);
+  if (savedSettings === `${idName}`) {
+    rendRinghtAnswer();
+    function rendRinghtAnswer() {
+      const rendAnswer = `<div><img src="/${logo}" alt="${idName}"height="100" width="100px"><span>${answer}</span><p>${info}</p></div>`;
+      logoClick.innerHTML = ('beforeend', rendAnswer);
+    }
+  } else {
+    rendAnsw();
+    function rendAnsw() {
+      const renderInput = `<div><img src="/${logoHidden}" alt="${idName}"height="100" width="100px"><form class="sendBtn"><input type="text"><button >answer</button></form></div>`;
+      logoClick.innerHTML = ('beforeend', renderInput);
+
+      const inputSend = document.querySelector('.sendBtn');
+      inputSend.addEventListener('submit', listenInput);
+
+      function listenInput(e) {
+        e.preventDefault();
+        let answerLogo = e.target[0].value;
+        if (answerLogo === answer) {
+          localStorage.setItem(`${answer}`, `${idName}`);
+          const re = `<div><img src="/${logo}" alt="${idName}"height="100" width="100px"><span>${answer}</span><p>${info}</p></div>`;
+          logoClick.innerHTML = ('beforeend', re);
+        } else {
+          alert('Newirno');
+        }
+      }
+    }
+  }
 }
-console.log("start");
+
+const reset = document.querySelector('.reset')
+reset.addEventListener("click", ()=> {localStorage.clear()})
