@@ -37,3 +37,18 @@
         color: #e3ad40;
     }
 }
+
+.back-btn-ref {
+    left: 28%;
+    top: -1%;
+    position: absolute;
+    font-size: 20px;
+    font-weight: 900px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aqua;
+
+    &:hover {
+        color: #e3ad40;   
+    }
+}

@@ -35,14 +35,14 @@ function renderInputLogo(e) {
     // Ренд правильної відповіді завчасно
     rendRinghtAnswer();
     function rendRinghtAnswer() {
-      const rendAnswer = `<a href="./level1.html">Назад</a><div><img src="${logo}" alt="${idName}"height="150" width="200px"><span>${answer}</span><p>${info}</p></div>`;
+      const rendAnswer = `<a class="back-btn-ref" href="./level1.html">Назад</a><div class="logoInput"><img src="${logo}" alt="${idName}"height="150" width="200px"><p>${info}</p></div>`;
       logoClick.innerHTML = ('beforeend', rendAnswer);
     }
   } else {
     // Ренд невизначаної відповіді
     rendAnsw();
     function rendAnsw() {
-      const renderInput = `<a href="./level1.html">Назад</a><div><img src="${logoHidden}" alt="${idName}"height="150" width="200px"><form class="sendBtn"><input type="text"><button >answer</button></form></div>`;
+      const renderInput = `<a class="back-btn-ref" href="./level1.html">Назад</a><div class="logoInput"><img src="${logoHidden}" alt="${idName}"height="250" width="300px"><form class="sendBtn"><input class="inputClass" type="text"><button class="btn-answer">Відповідь</button></form></div>`;
       logoClick.innerHTML = ('beforeend', renderInput);
 
       const inputSend = document.querySelector('.sendBtn');
@@ -56,7 +56,7 @@ function renderInputLogo(e) {
         if (answerLogoUpCase === answer) {
           // Ренд правильної відповіді
           localStorage.setItem(`${answer}`, `${idName}`);
-          const re = `<a href="./level1.html">Назад</a><div><img src="${logo}" alt="${idName}"height="150" width="200px"><span>${answer}</span><p>${info}</p></div>`;
+          const re = `<a class="back-btn-ref" href="./level1.html">Назад</a><div class="logoInput"><img src="${logo}" alt="${idName}"height="150" width="200px"><p>${info}</p></div>`;
           logoClick.innerHTML = ('beforeend', re);
         } else {
           // Ренд невірної відповіді

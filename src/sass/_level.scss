@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     gap: 30px;
     image-rendering: auto;
-
+    justify-content: center;
 
     & li {
         background-color: white;
@@ -22,4 +22,41 @@
     position: absolute;
     right: 0;
     top: 0;
+}
+
+.logoInput  {
+
+
+    & img {
+        height: 350px;
+        width: 400px;
+    }
+    
+    & p {
+        font-size: 20px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 30px;
+        margin-top: 30px;
+    }
+}
+
+.inputClass {
+    margin-top: 30px;
+    font-size: 32px;
+}
+
+.btn-answer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 900px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aqua;
+
+    &:hover {
+        color: #e3ad40;   
+    }
 }
