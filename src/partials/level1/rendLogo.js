@@ -11,7 +11,7 @@ function rendLogo(level1) {
     .map(({ logoHidden, idName, answer, logo }) => {
       const rendTest = localStorage.getItem(`${answer}`);
       if (rendTest === idName) {
-        return `<li><img src="${logo}" alt="${idName}" width="200px" height="150px"/><img src="https://e7.pngegg.com/pngimages/1004/158/png-clipart-check-mark-tick-case-closed-miscellaneous-angle.png" alt="+" width="20"></li>`;
+        return `<li><img src="${logo}" alt="${idName}" width="200px" height="150px"/><img src="https://e7.pngegg.com/pngimages/1004/158/png-clipart-check-mark-tick-case-closed-miscellaneous-angle.png" alt="+" width="30" class="check"></li>`;
       } else {
         return `<li><img src="${logoHidden}" alt="${idName}" width="200px" height="150px"/></li>`;
       }

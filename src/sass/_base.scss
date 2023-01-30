@@ -1,0 +1,46 @@
+body {
+    background-image: url(../img/patern.png);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: url('../img/cursor-green.png') 15 12, auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: url('../img/cursor-green.png') 15 12, auto;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  cursor: url('../img/cursor-green.png') 15 12, auto;
+  border: none;
+  font-family: inherit;
+}
+
+
+// RESET 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.list {
+    list-style: none;
+}

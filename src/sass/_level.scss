@@ -1,0 +1,25 @@
+.logoList {
+    margin-top: 60px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    image-rendering: auto;
+
+
+    & li {
+        background-color: white;
+        position: relative;
+
+        &:hover {
+            transform: scale(1.04);
+            transition: transform .25s linear;
+        }
+    }
+}
+
+.check {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
