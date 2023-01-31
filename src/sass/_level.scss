@@ -14,11 +14,6 @@
 
     }
 
-    & li:hover {
-     @media screen and (min-width: 768px) {
-        transform: scale(1.04);
-transition: transform .25s linear;
-}}
 }
 
 .check {
