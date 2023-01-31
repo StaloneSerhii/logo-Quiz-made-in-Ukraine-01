@@ -3,19 +3,20 @@
     margin-right: auto;
     margin-top: 40px;
     padding: 15px;
-    color: white;
+    color: opacity($color: #c4c3c300);
     background-color: rgb(116, 243, 99);
     border-radius: 20;
 
     text-align: center;
 
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 800;
     line-height: 1.2;
     letter-spacing: .04em;
 
-    &:hover {
 
+    &:hover {
+        background-color: rgb(90, 188, 77);
         color: #e3ad40;
     }
     & li {
@@ -36,7 +37,7 @@
 }
 
 .back-btn-ref {
-    left: 35%;
+    left: 75%;
     top: -1%;
     position: absolute;
     font-size: 35px;
