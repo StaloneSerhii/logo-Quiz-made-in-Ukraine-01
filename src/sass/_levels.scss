@@ -37,14 +37,12 @@
 }
 
 .back-btn-ref {
-    left: 75%;
-    top: -1%;
-    position: absolute;
+    margin-left: 40px;
     font-size: 35px;
     font-weight: 900px;
     padding: 10px;
     border-radius: 10px;
-    background-color: aqua;
+    background-color: aquamarine;
 
     &:hover {
         color: #e3ad40;   
