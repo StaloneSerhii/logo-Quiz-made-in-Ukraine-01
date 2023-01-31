@@ -1,21 +1,24 @@
 .logoList {
-    margin-top: 60px;
-
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    image-rendering: auto;
-    justify-content: center;
+
+    margin-top: 60px;
+    @media screen and (min-width: 780px) {
+        gap: 30px;
+    }
 
     & li {
         background-color: white;
         position: relative;
 
-        &:hover {
-            transform: scale(1.04);
-            transition: transform .25s linear;
-        }
+
     }
+
+    & li:hover {
+     @media screen and (min-width: 768px) {
+        transform: scale(1.04);
+transition: transform .25s linear;
+}}
 }
 
 .check {
@@ -26,6 +29,11 @@
 
 .logoInput  {
 
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
 
     & img {
         height: 350px;
@@ -34,7 +42,7 @@
     
     & p {
         font-size: 20px;
-        background-color: white;
+        background-color: rgb(225, 214, 185);
         padding: 10px;
         border-radius: 30px;
         margin-top: 30px;

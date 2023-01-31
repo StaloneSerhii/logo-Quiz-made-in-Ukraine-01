@@ -3,22 +3,22 @@
     margin-right: auto;
     margin-top: 40px;
     padding: 15px;
-    width: 500px;
     color: white;
     background-color: rgb(116, 243, 99);
     border-radius: 20;
 
     text-align: center;
 
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 800;
     line-height: 1.2;
     letter-spacing: .04em;
 
-    transform: scale(1);
     &:hover {
-        transform: scale(1.04);
+       @media screen and (min-width: 768px) {
+                    transform: scale(1.04);
         transition: transform .25s linear;
+        }
         color: #e3ad40;
     }
     & li {
@@ -27,7 +27,7 @@
 }
 
 .back-btn {
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 900px;
     padding: 10px;
     background-color: aquamarine;
@@ -39,10 +39,10 @@
 }
 
 .back-btn-ref {
-    left: 28%;
+    left: 35%;
     top: -1%;
     position: absolute;
-    font-size: 20px;
+    font-size: 35px;
     font-weight: 900px;
     padding: 10px;
     border-radius: 10px;
