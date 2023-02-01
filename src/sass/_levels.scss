@@ -25,24 +25,22 @@
 }
 
 .back-btn {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 900px;
-    padding: 10px;
-    background-color: aquamarine;
+    background-color: #f2fffe;
     border-radius: 10px;
-
+    padding: 5px;
     &:hover {
         color: #e3ad40;
     }
 }
 
 .back-btn-ref {
-    margin-left: 40px;
-    font-size: 35px;
+    padding: 5;
+    font-size: 30px;
     font-weight: 900px;
-    padding: 10px;
     border-radius: 10px;
-    background-color: aquamarine;
+    background-color: #f2fffe;
 
     &:hover {
         color: #e3ad40;   
