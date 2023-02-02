@@ -12,7 +12,7 @@ rend.insertAdjacentHTML('beforeend', addRend);
 // Функція рендеру грошей...
 function getMoney() {
   let monneys = localStorage.getItem('monney');
-  return JSON.parse(monneys)
+  return JSON.parse(monneys);
 }
 console.log(getMoney());
 
@@ -67,7 +67,6 @@ function renderInputLogo(e) {
     function rendAnsw() {
       const renderInput = `<div class="logoInput"><img src="${logoHidden}" alt="${idName}" width="200px"><form class="sendBtn"><input class="inputClass" type="text"><button class="btn-answer">Відповідь</button></form></div>`;
       logoClick.innerHTML = ('beforeend', renderInput);
-
       const inputSend = document.querySelector('.sendBtn');
       inputSend.addEventListener('submit', listenInput);
 
@@ -81,6 +80,7 @@ function renderInputLogo(e) {
           if (monney === null) {
             localStorage.setItem('monney', 5);
           } else {
+            // showMonney.refresh();
             const monney = localStorage.getItem('monney');
             const monneyParse = JSON.parse(monney);
             const asd = Number(monneyParse);
@@ -91,6 +91,11 @@ function renderInputLogo(e) {
             localStorage.removeItem('monney');
             localStorage.setItem('monney', qaqa);
             localStorage.setItem(`${answer}`, `${idName}`);
+
+            // Оновлення грошей після відповіді
+            const showMonney = document.querySelector('.monney');
+            showMonney.textContent = getMoney();
+
             const re = `<div class="logoInput"><img src="${logo}" alt="${idName}" width="200px"><p>${info}</p></div>`;
             logoClick.innerHTML = ('beforeend', re);
           }
