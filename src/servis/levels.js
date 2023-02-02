@@ -11,5 +11,5 @@ for (let i = 0; i < allLogoBase; i++) {
   }
 }
 
-const title = document.querySelector(".answerLogoLevel");
+const title = document.querySelector('.answerLogoLevel');
 title.textContent = `${allAnswerLogo.length}`;

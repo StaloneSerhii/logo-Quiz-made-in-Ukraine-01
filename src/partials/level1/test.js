@@ -1,6 +1,4 @@
 const addEasy = [{
 }]
-
-
 export {addEasy}
 
