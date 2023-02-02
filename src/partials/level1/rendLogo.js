@@ -12,8 +12,9 @@ rend.insertAdjacentHTML('beforeend', addRend);
 // Функція рендеру грошей...
 function getMoney() {
   let monneys = localStorage.getItem('monney');
-  return monneysParse = JSON.parse(monneys)
+  return JSON.parse(monneys)
 }
+console.log(getMoney());
 
 function rendLogo(level1) {
   const showMonney = document.querySelector('.monney');
