@@ -77,3 +77,22 @@
         color: #e3ad40;   
     }
 }
+.inputCub {
+    width: 30px;
+    background-color: aquamarine;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.inputClass {
+    display: flex;
+}
+
+.word {
+    margin-top: 20px;
+    margin-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+}
+
