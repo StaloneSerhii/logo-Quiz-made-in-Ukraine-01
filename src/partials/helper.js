@@ -9,7 +9,7 @@ export function help(params) {
   helperTwit.addEventListener('click', helperNext);
 
   function helperNext() {
-    if (getMoney() >= 5) {
+    if (getMoney() >= 15) {
       backLevel = level1[params];
       const getMoneys = getMoney();
       refreshLS(Number(getMoneys) - 15);
