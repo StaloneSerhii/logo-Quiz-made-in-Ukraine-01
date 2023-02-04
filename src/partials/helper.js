@@ -9,8 +9,12 @@ export function help(params) {
   helperTwit.addEventListener('click', helperNext);
 
   function helperNext() {
+    console.log(params);
     if (getMoney() >= 15) {
+      console.log(level1[params]);
+      console.log(backLevel);
       backLevel = level1[params];
+
       const getMoneys = getMoney();
       refreshLS(Number(getMoneys) - 15);
       inputClass.value = '';
