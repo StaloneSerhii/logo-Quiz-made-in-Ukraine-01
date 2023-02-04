@@ -10,18 +10,18 @@ export function help(params) {
 
   function helperNext() {
     console.log(params);
-    if (getMoney() >= 15) {
+    if (getMoney() >= 25) {
       let backLevel = level1[params].answer;
       console.log(backLevel);
       const getMoneys = getMoney();
-      refreshLS(Number(getMoneys) - 15);
+      refreshLS(Number(getMoneys) - 25);
       inputClass.value = '';
         inputClass.value += backLevel;
     }
   }
 let val ='';
   function helper() {
-    if (getMoney() >= 1) {
+    if (getMoney() >= 5) {
       if (level1[params].answer.length >= hel+1) {
   let backLevel = level1[params].answer.split('');
   const getMoneys = getMoney();
