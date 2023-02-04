@@ -23,7 +23,7 @@ let val ='';
   function helper() {
     if (getMoney() >= 1) {
       if (level1[params].answer.length >= hel+1) {
-  backLevel = level1[params].answer.split('');
+  let backLevel = level1[params].answer.split('');
   const getMoneys = getMoney();
   refreshLS(Number(getMoneys) - 1);
   alert(backLevel[hel]);
