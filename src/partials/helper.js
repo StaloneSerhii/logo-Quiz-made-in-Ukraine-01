@@ -1,6 +1,6 @@
 import { level1 } from './level1/levelRend';
-import { getMoney, renderInputLogo, numLogo } from './level1/rendLogo';
-let hel = 0;
+import { getMoney, listenInput } from './level1/rendLogo';
+ export let hel = 0;
 export function help(params) {
   const helpBtn = document.querySelector('.helper');
   helpBtn.addEventListener('click', helper);
@@ -9,14 +9,16 @@ export function help(params) {
   helperTwit.addEventListener('click', helperNext);
 
   function helperNext() {
-    console.log(params);
     if (getMoney() >= 25) {
+     
       let backLevel = level1[params].answer;
       console.log(backLevel);
       const getMoneys = getMoney();
       refreshLS(Number(getMoneys) - 25);
       inputClass.value = '';
         inputClass.value += backLevel;
+        inputClass.placeholder += backLevel;
+    
     }
   }
 let val ='';
@@ -32,12 +34,6 @@ val += backLevel[hel]
 inputClass.value = '';
 inputClass.value += val;
 inputClass.placeholder += backLevel[hel];
-
-
-
-
-
-console.log(level1[params].answer.length , hel);
       hel += 1;
      }
     }

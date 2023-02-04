@@ -72,7 +72,7 @@
     padding: 10px;
     border-radius: 5px;
     background-color: aqua;
-
+    width: 120px;
     &:hover {
         color: #e3ad40;   
     }
@@ -98,4 +98,11 @@
 
 .imgList {
     border-radius: 15px;
+}
+.helper-twit,
+.helper {
+    width: 60px;
+    height: 60px;
+    margin: 0 20px ;
+      background-color: aquamarine;
 }

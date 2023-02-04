@@ -67,7 +67,7 @@ function renderInputLogo(e) {
     hiddenLevels.hidden = true;
     rendAnsw();
     function rendAnsw() {
-      const renderInput = `<div class="logoInput"><button class="helper">?</button><img src="${logoHidden}" alt="${idName}" width="200px"><button  class="helper-twit">Answer</button><form class="sendBtn"><input class="inputClass" placeholder="" type="text"><button style="backround-color: grey;" class="btn-answer">Відповідь</button></form></div>`;
+      const renderInput = `<div class="logoInput"><button class="helper">Буква</button><img src="${logoHidden}" alt="${idName}" width="200px"><button  class="helper-twit">Відп.</button><form class="sendBtn"><input class="inputClass" placeholder="" type="text"><button style="backround-color: grey;" class="btn-answer">Відповідь</button></form></div>`;
       logoClick.innerHTML = ('beforeend', renderInput);
       const inputSend = document.querySelector('.sendBtn');
       inputSend.addEventListener('submit', listenInput);
