@@ -11,14 +11,12 @@ export function help(params) {
   function helperNext() {
     console.log(params);
     if (getMoney() >= 15) {
-      console.log(level1[params]);
+      backLevel = level1[params].answer;
       console.log(backLevel);
-      backLevel = level1[params];
-
       const getMoneys = getMoney();
       refreshLS(Number(getMoneys) - 15);
       inputClass.value = '';
-        inputClass.value += backLevel.answer;
+        inputClass.value += backLevel;
     }
   }
 let val ='';
