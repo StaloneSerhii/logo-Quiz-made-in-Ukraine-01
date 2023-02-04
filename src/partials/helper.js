@@ -11,7 +11,7 @@ export function help(params) {
   function helperNext() {
     console.log(params);
     if (getMoney() >= 15) {
-      backLevel = level1[params].answer;
+      let backLevel = level1[params].answer;
       console.log(backLevel);
       const getMoneys = getMoney();
       refreshLS(Number(getMoneys) - 15);
