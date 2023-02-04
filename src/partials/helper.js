@@ -1,22 +1,44 @@
 import { level1 } from './level1/levelRend';
 import { getMoney, renderInputLogo, numLogo } from './level1/rendLogo';
-let hel = 0
+let hel = 0;
 export function help(params) {
   const helpBtn = document.querySelector('.helper');
   helpBtn.addEventListener('click', helper);
+  const inputClass = document.querySelector('.inputClass');
+  const helperTwit = document.querySelector('.helper-twit');
+  helperTwit.addEventListener('click', helperNext);
 
+  function helperNext() {
+    if (getMoney() >= 5) {
+      backLevel = level1[params];
+      const getMoneys = getMoney();
+      refreshLS(Number(getMoneys) - 15);
+      inputClass.value = '';
+        inputClass.value += backLevel.answer;
+    }
+  }
+let val ='';
   function helper() {
-    console.log(params);
-if ( getMoney() > 1) {
-  
-    backLevel = level1[params].answer.split('');
+    if (getMoney() >= 1) {
+      if (level1[params].answer.length >= hel+1) {
+  backLevel = level1[params].answer.split('');
+  const getMoneys = getMoney();
+  refreshLS(Number(getMoneys) - 1);
+  alert(backLevel[hel]);
 
-    const getMoneys = getMoney();
-    refreshLS(Number(getMoneys) - 1);
-    alert(backLevel[hel])
-    hel += 1
-}
+val += backLevel[hel]
+inputClass.value = '';
+inputClass.value += val;
+inputClass.placeholder += backLevel[hel];
 
+
+
+
+
+console.log(level1[params].answer.length , hel);
+      hel += 1;
+     }
+    }
   }
 }
 

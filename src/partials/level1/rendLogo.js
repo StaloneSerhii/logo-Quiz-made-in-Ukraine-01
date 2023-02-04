@@ -60,13 +60,14 @@ function renderInputLogo(e) {
 
       // Слухач на кнопку далі
     }
+
   } else {
     // Ренд невизначаної відповіді(інпуту)
     backHidden.hidden = false;
     hiddenLevels.hidden = true;
     rendAnsw();
     function rendAnsw() {
-      const renderInput = `<div class="logoInput"><button class="helper">?</button><img src="${logoHidden}" alt="${idName}" width="200px"><button class="helper-twit">></button><form class="sendBtn"><input class="inputClass" type="text"><button class="btn-answer">Відповідь</button></form></div>`;
+      const renderInput = `<div class="logoInput"><button class="helper">?</button><img src="${logoHidden}" alt="${idName}" width="200px"><button  class="helper-twit">Answer</button><form class="sendBtn"><input class="inputClass" placeholder="" type="text"><button style="backround-color: grey;" class="btn-answer">Відповідь</button></form></div>`;
       logoClick.innerHTML = ('beforeend', renderInput);
       const inputSend = document.querySelector('.sendBtn');
       inputSend.addEventListener('submit', listenInput);

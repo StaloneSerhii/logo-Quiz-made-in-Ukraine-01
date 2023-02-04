@@ -61,13 +61,12 @@ function renderInputLogo(e) {
       // Слухач на кнопку далі
     }
   } else {
-    let add = 0;
     // Ренд невизначаної відповіді(інпуту)
     backHidden.hidden = false;
     hiddenLevels.hidden = true;
     rendAnsw();
     function rendAnsw() {
-      const renderInput = `<div class="logoInput"><img src="${logoHidden}" alt="${idName}" width="200px"><button class="helper-twit">></button><ul class="inputClass"  type="text"></ul><ul class = "word"></ul></div>`;
+      const renderInput = `<div class="logoInput"><button class="helper">?</button><img src="${logoHidden}" alt="${idName}" width="200px"><button class="helper-twit">></button><ul class="inputClass"  type="text"></ul><ul class = "word"></ul></div>`;
       logoClick.innerHTML = ('beforeend', renderInput);
 
       const inputSend = document.querySelector('.inputClass');
@@ -98,7 +97,6 @@ function renderInputLogo(e) {
       if (pushRng.length > 0) {
         pushRng -= 1
       }
-
       help();
 
       const word = document.querySelector('.word');
@@ -107,56 +105,44 @@ function renderInputLogo(e) {
       let wordsPack = '';
       let answerInput = [];
 
-      for (let i = 0; i < answer.length; i++) {
-        const backroundPos = `<li style="background-color: aqua"><h3 name="${i}" class="inputWord">-</h3></li>`;
-        inputSend.insertAdjacentHTML('beforeend', backroundPos);
-      }
 
       function listenIn(e) {
         if (answerInput.length < answer.length) {
-          answerInput .push(e.target.textContent)
+          answerInput.push(e.target.textContent)
         }
 
         let words = e.target.textContent;
         let wordsD = e.target;
         wordsPack += words;
-        godHelp += 1
-        console.log(godHelp);
+
+        console.log(answerInput);
+        const rendInput = `<li><h3 class="inputCub">${words}</h3></li>`;
         let delH = e.target;
-       
+
         if (pushRng.length < answer.length) {
-          
           pushRng +=1
-          inputSend.childNodes[add].textContent= e.target.textContent
-          add += 1
-          console.log(add)
-          // inputSend.insertAdjacentHTML('beforeend', rendInput);
+          console.log(pushRng.length);
+          inputSend.insertAdjacentHTML('beforeend', rendInput);
           delH.remove();
         }
 
-        
-
- 
       }
-    let godHelp = 0
-    console.log(godHelp);
 // видалення веденого
-
       inputSend.addEventListener('click', removedGit);
       function removedGit(e) {
-        if (0 < godHelp) {
-          godHelp -= 1
+        
+        pushRng -= 1
+        console.log(pushRng);
         const numDell = answerInput.indexOf(e.target.textContent)
-        answerInput = answerInput .splice(numDell, 1);
-        let delH = e.target;
-
+        answerInput = answerInput.splice(numDell, 1);
+        console.log(answerInput)
+        let delH = e.target
+        delH.remove()
+        console.log(delH.textContent)
         word.insertAdjacentHTML(
           'beforeend',
           `<li><h3 class="inputCub">${delH.textContent}</h3></li>`
-        )
-  delH.textContent= "";
-
-}
+        );
       }
 
       function listenInput() {
