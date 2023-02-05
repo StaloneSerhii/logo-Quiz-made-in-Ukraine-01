@@ -92,12 +92,9 @@ function rendInputu(answerLogoUpCase) {
 }
 
 function rennLogoInputu(savedSettings, numLogo) {
-  console.log(numLogo);
   const { logoHidden, idName, logo, info } = level1[numLogo];
   const idname = Number(idName)
-  console.log(savedSettings, idName);
-  if (Number(savedSettings) === Number(idname)) {
-    console.log('ringht');
+  if (savedSettings == Number(idname)) {
     // Ренд правильної відповіді завчасно
     backHidden.hidden = false;
     hiddenLevels.hidden = true;
@@ -141,26 +138,18 @@ function rennLogoInputu(savedSettings, numLogo) {
 // btn next back
 
 function nextBtn() {
-  console.log('next');
+
   numLogo=  Number(numLogo)+1
   const { answer } = level1[numLogo];
-  console.log(answer);
-  console.log(numLogo);
   savedSettings = localStorage.getItem(`${answer}`);
   logoClick.removeEventListener('click', renderInputLogo);
 
-console.log(savedSettings);
   rennLogoInputu(savedSettings, Number(numLogo));
 }
 function backBtn() {
-  console.log('next');
   numLogo=  Number(numLogo)-1
   const { answer } = level1[numLogo];
-  console.log(answer);
-  console.log(numLogo);
   savedSettings = localStorage.getItem(`${answer}`);
   logoClick.removeEventListener('click', renderInputLogo);
-
-console.log(savedSettings);
   rennLogoInputu(savedSettings, Number(numLogo));
 }
