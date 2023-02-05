@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
 
-
+    font-family: 'Caveat';
     font-size: 40px;
     letter-spacing: .04em;
     text-align: center;
@@ -22,7 +22,6 @@
     border-radius: 30px;
     background-color: #00800099;
     @media screen and (min-width: 768px) {
-    margin-top: 70px;
     }
     &:hover {
         background-color: green;

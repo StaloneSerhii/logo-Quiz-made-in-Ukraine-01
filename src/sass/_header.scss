@@ -4,17 +4,16 @@
 }
 
 .header-logo {
-    font-size: 60px;
+    font-size: 100px;
     text-align: center;
     font-weight: 800;
-
-    box-shadow: 0 8px 25px #03a7ffe0;
+    font-family: 'Caveat';
 }
 
 .header-level {
     display: flex;
     justify-content: space-between;
-    background-color: aliceblue;
+    background-color: #a8b89d;
     padding: 10px;
     margin: auto;
 
