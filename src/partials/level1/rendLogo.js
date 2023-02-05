@@ -78,7 +78,7 @@ function rendInputu(answerLogoUpCase) {
       const showMonney = document.querySelector('.monney');
       showMonney.textContent = getMoney();
 
-      const re = `<div class="logoInput"><img src="${logo}" alt="${idName}" width="200px"><p>${info}</p><button class="helper back">Back</button><button  class="helper-twit next">Next</button></div>`;
+      const re = `<div class="logoInput"><img src="${logo}" alt="${idName}" width="200px"><p>${info}</p><button class="helper back"><Back</button><button  class="helper-twit next">Next></button></div>`;
       logoClick.innerHTML = ('beforeend', re);
       const nextBt = document.querySelector('.next');
       const backBt = document.querySelector('.back');
@@ -100,7 +100,7 @@ function rennLogoInputu(savedSettings, numLogo) {
     hiddenLevels.hidden = true;
     rendRinghtAnswer();
     function rendRinghtAnswer() {
-      const rendAnswer = `<div class="logoInput"><img src="${logo}" alt="${idName}" width="200px"><p>${info}</p><button class="helper back">Back</button><button  class="helper-twit next">Next</button></div>`;
+      const rendAnswer = `<div class="logoInput"><img src="${logo}" alt="${idName}" width="200px"><p>${info}</p><button class="helper back">< Back</button><button  class="helper-twit next">Next ></button></div>`;
       logoClick.innerHTML = ('beforeend', rendAnswer);
       // Слухач на кнопку далі
       const nextBt = document.querySelector('.next');
@@ -114,7 +114,7 @@ function rennLogoInputu(savedSettings, numLogo) {
     hiddenLevels.hidden = true;
     rendAnsw();
     function rendAnsw() {
-      const renderInput = `<div class="logoInput"><div><button class="helper">Буква</button><button class="helper back">Back</button></div><img src="${logoHidden}" alt="${idName}" width="200px"><div><button  class="helper-twit">Відп.</button><button  class="helper-twit next">Next</button></div><form class="sendBtn"><input class="inputClass" placeholder="" type="text"><button style="backround-color: grey;" class="btn-answer">Відповідь</button></form></div>`;
+      const renderInput = `<div class="logoInput"><div><button class="helper">Буква</button><button class="helper back">< Back</button></div><img src="${logoHidden}" alt="${idName}" width="200px"><div><button  class="helper-twit">Відп.</button><button  class="helper-twit next">Next ></button></div><form class="sendBtn"><input class="inputClass" placeholder="" type="text"><button style="backround-color: grey;" class="btn-answer">Відповідь</button></form></div>`;
       logoClick.innerHTML = ('beforeend', renderInput);
       const inputSend = document.querySelector('.sendBtn');
       inputSend.addEventListener('submit', listenInput);

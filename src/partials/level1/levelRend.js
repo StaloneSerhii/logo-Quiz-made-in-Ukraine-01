@@ -2,10 +2,9 @@ const level1 = [
   {
     idName: '0',
     answer: 'мівіна',
-    logoHidden:
-      'https://scontent.fifo4-1.fna.fbcdn.net/v/t39.30808-6/328696425_504651701591425_682442139963775075_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=laWurqYTzDgAX-lVNC4&_nc_oc=AQl5DUinkDBlX74n6_2B6CSVnAaVrV8CSLt3U1IerXjyY1IMtOT0IvE-javHuacgwME&_nc_ht=scontent.fifo4-1.fna&oh=00_AfAko8czgaGmfIS7EdlAIJnfmOIH8J6BT5cVXbVGYABh-A&oe=63DED527',
-    logo: 'https://scontent.fifo4-1.fna.fbcdn.net/v/t39.30808-6/328451124_500768835564531_5334138654413128220_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=c6ccbK4xy6gAX-f1zfn&_nc_ht=scontent.fifo4-1.fna&oh=00_AfBF16iMF-DsyT7MHP1oVwRDlkqYxgLt67OdTlaNPnroew&oe=63E0A223',
-    info: 'Мівіна – товарний знак, розроблений у Харкові корпорацією «Техноком», що займається виробництвом харчових напівфабрикатів.«Мівіна» є загальною назвою вермішелі швидкого приготування в українських споживачів',
+    logoHidden: 'https://scontent.fifo4-1.fna.fbcdn.net/v/t39.30808-6/328696425_504651701591425_682442139963775075_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=XStT_SOsxzwAX9ZxqC2&_nc_oc=AQkYXRHzSujm0xmBSH9Se1s5Z2rPlhT8b-LIMOJPP6rvfwlzMtRmodcLQuNqnv77zk4&_nc_ht=scontent.fifo4-1.fna&oh=00_AfAMJ6j83guX5SXd4hYgckwusee1982zFYCsRdjXRbY_FQ&oe=63E4C3E7',
+    logo: 'https://scontent.fifo4-1.fna.fbcdn.net/v/t39.30808-6/328451124_500768835564531_5334138654413128220_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=75rkE4efDIkAX82jPkW&_nc_ht=scontent.fifo4-1.fna&oh=00_AfANTiD2FvEVcZbeDj4XGYtUCeGTxyGvdWNu4vhshc62qg&oe=63E496A3',
+          info: 'Мівіна – товарний знак, розроблений у Харкові корпорацією «Техноком», що займається виробництвом харчових напівфабрикатів.«Мівіна» є загальною назвою вермішелі швидкого приготування в українських споживачів',
   },
   {
     idName: '1',
@@ -25,9 +24,8 @@ const level1 = [
   {
     idName: '3',
     answer: 'садочок',
-    logoHidden:
-      'https://scontent.fifo4-1.fna.fbcdn.net/v/t39.30808-6/328710150_713006033562468_3955004205653111802_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=qXbpHhBKe0IAX_VKmar&_nc_ht=scontent.fifo4-1.fna&oh=00_AfDcSMzW3mQuJh5kueRvNQRS7cyN54mX5DUwxAVyYrKvmQ&oe=63DEF4D6',
-    logo: 'https://scontent.fifo4-1.fna.fbcdn.net/v/t39.30808-6/328673743_2750434581765525_3422849510011979217_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=QRobRVxtcaQAX9AsIAM&_nc_ht=scontent.fifo4-1.fna&oh=00_AfBnO7cSyB_mA67-GxWxnFq2kYXdAdXVlMi3bXbrQly-0A&oe=63DFDECA',
+    logoHidden: 'https://scontent.fifo4-1.fna.fbcdn.net/v/t39.30808-6/328710150_713006033562468_3955004205653111802_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=iiSIrwkaBoAAX-RWIAg&_nc_ht=scontent.fifo4-1.fna&oh=00_AfD9oLU8zCZqPTvPf8DYzWAZ8rfvxsVAvPy6TR9ZBegz3Q&oe=63E4E396',
+    logo: 'https://scontent.fifo4-1.fna.fbcdn.net/v/t39.30808-6/328673743_2750434581765525_3422849510011979217_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=MQwukWlCRO4AX_tGTfK&_nc_ht=scontent.fifo4-1.fna&oh=00_AfB6GFaPQ1FeuDYbpv-bJH2QDyq9b54G1CQsw7tpTemNfw&oe=63E5CD8A',
     info: 'ТМ «Садочок» — це бренд фруктових та плодоовочевих соків, нектарів, морсів. Виробник  — PepsiCo. Продукція виробляється на заводі з переробки фруктів, овочів та виробництві соків (Миколаївська обл.), заводі з виробництва соків (Миколаївська обл.), двох заводів з переробки фруктів та овочів (Крим та Херсонська обл.).',
   },
   {
@@ -41,9 +39,8 @@ const level1 = [
   {
     idName: '5',
     answer: 'атб',
-    logoHidden:
-      'https://scontent.fifo4-1.fna.fbcdn.net/v/t39.30808-6/328492883_1316573602526130_8245995088279237042_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=K17zNO2W7CkAX-RVEU0&_nc_ht=scontent.fifo4-1.fna&oh=00_AfCqu1j8xTkf9iKZ8w0GLnFNwd2Q6S2NdmDgVLYnRoaKbg&oe=63DEF95F',
-    logo: 'https://scontent.fifo4-1.fna.fbcdn.net/v/t39.30808-6/327133659_4197031340521185_9165908302607212147_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=CtUovFmaxZwAX-35Ln2&_nc_ht=scontent.fifo4-1.fna&oh=00_AfDRzix3NTYCFbnBYckRC90Fpq0DPeGG_1_6Sl2wo7tLRQ&oe=63DF3B66',
+    logoHidden: 'https://scontent.fifo4-1.fna.fbcdn.net/v/t39.30808-6/328492883_1316573602526130_8245995088279237042_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=0a9eOvf6HGIAX-TzDNv&_nc_ht=scontent.fifo4-1.fna&oh=00_AfDvrTGXTaVzrk6cGo0MkE8aJl9uClgzXjkgfg0Ox5LoNA&oe=63E4E81F',
+    logo: 'https://scontent.fifo4-1.fna.fbcdn.net/v/t39.30808-6/327133659_4197031340521185_9165908302607212147_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=GBCtSDE0USAAX91PVR1&_nc_ht=scontent.fifo4-1.fna&oh=00_AfBQNj76uQbvoeBfYzpVJlIMN2jU7sa8jgpEoa0n-76MEQ&oe=63E52A26',
     info: '«АТБ-Маркет» (широко відома як «АТБ») — найбільша українська мережа супермаркетів як за товарообігом, так і за числом крамниць, яких у 2021 році мала 1314.',
   },
   {
