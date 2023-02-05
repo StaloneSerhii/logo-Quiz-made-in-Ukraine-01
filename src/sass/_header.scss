@@ -8,6 +8,7 @@
     text-align: center;
     font-weight: 600px;
     font-family: 'Caveat';
+    line-height: 0.9;
 }
 
 .header-level {
@@ -31,8 +32,8 @@
 
 .tuk {
     position: absolute;
-    right: 19%;
-
+    right: 1%;
+    top: -75px;
     
         animation-name: tuk;
         animation-duration: 0.3s;

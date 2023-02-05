@@ -5,11 +5,11 @@ import { level1 } from './levelRend';
 // const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
 // const buttons = document.querySelectorAll("body");
 
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-  audio.play();
-  });
-});
+// buttons.forEach(button => {
+//   button.addEventListener("click", () => {
+//   audio.play();
+//   });
+// });
 
 let numLogo = '';
 let savedSettings =''
