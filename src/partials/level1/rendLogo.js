@@ -1,6 +1,16 @@
 import { help } from '../helper';
 import { level1 } from './levelRend';
 
+//mp3 
+// const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
+// const buttons = document.querySelectorAll("body");
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+  audio.play();
+  });
+});
+
 let numLogo = '';
 let savedSettings =''
 // Кнопки в хедері
@@ -30,7 +40,7 @@ function rendLogo(level1) {
     .map(({ logoHidden, idName, answer, logo }) => {
       const rendTest = localStorage.getItem(`${answer}`);
       if (rendTest === idName) {
-        return `<li><img class="imgList" src="${logo}" alt="${idName}" width="200px" /><img src="https://w7.pngwing.com/pngs/181/255/png-transparent-check-mark-computer-icons-others-angle-leaf-grass.png" alt="+" width="30" class="check"></li>`;
+        return `<li><img class="imgList" src="${logo}" alt="${idName}" width="200px" /><img src="/done.3fe18ed5.png" alt="+" width="40" class="check"></li>`;
       } else {
         return `<li><img class="imgList" src="${logoHidden}" alt="${idName}" width="200px" /></li>`;
       }

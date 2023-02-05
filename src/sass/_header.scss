@@ -28,3 +28,27 @@
         padding-right: 300px;
     }
 }
+
+.tuk {
+    position: absolute;
+    right: 19%;
+
+    
+        animation-name: tuk;
+        animation-duration: 0.3s;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      
+      
+ 
+}
+@keyframes tuk {
+    0% {
+      transform: scale(30deg);
+    }
+  
+    100% {
+        transform: scale(1.1) rotate(0);
+    }
+  }
