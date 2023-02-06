@@ -40,7 +40,7 @@ function rendLogo(level1) {
     .map(({ logoHidden, idName, answer, logo }) => {
       const rendTest = localStorage.getItem(`${answer}`);
       if (rendTest === idName) {
-        return `<li><img class="imgList" src="${logo}" alt="${idName}" width="200px" /><img src="/done.3fe18ed5.png" alt="+" width="40" class="check"></li>`;
+        return `<li><img class="imgList" src="${logo}" alt="${idName}" width="200px" /><img src="https://free-png.ru/wp-content/uploads/2021/06/free-png.ru-39-340x340.png" alt="+" width="40" class="check"></li>`;
       } else {
         return `<li><img class="imgList" src="${logoHidden}" alt="${idName}" width="200px" /></li>`;
       }
