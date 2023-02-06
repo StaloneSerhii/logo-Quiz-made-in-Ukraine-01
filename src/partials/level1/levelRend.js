@@ -9,9 +9,8 @@ const level1 = [
   {
     idName: '1',
     answer: 'пакко',
-    logoHidden:
-      'https://scontent.fifo4-1.fna.fbcdn.net/v/t39.30808-6/328882767_911822059847113_5174861931053723334_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=A776bxlw_n8AX9z4ekj&_nc_ht=scontent.fifo4-1.fna&oh=00_AfDNQ33HcayFhI7W80DF4w0vCVIYqdPmJmSpKdgVDo4njQ&oe=63E0A956',
-    logo: 'https://scontent.fifo4-1.fna.fbcdn.net/v/t39.30808-6/328669015_726049979126840_9005199017678617618_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=OeKpsvggpiwAX-IfR8b&_nc_ht=scontent.fifo4-1.fna&oh=00_AfD0xR1VzFPPE3fgzyj9ycahzcTNq4qrsF16GpvKoreAGg&oe=63E09336',
+    logoHidden: 'http://her-dan.pp.ua/img/pakko-hiden.jpg',
+    logo: 'http://her-dan.pp.ua/img/pakko.jpg', 
     info: '«Вопак» — західноукраїнська торгова мережа. Загальна кількість магазинів у мережі 67 супермаркетів. Вони розташовані у Львівській, Тернопільській, Івано-Франківській, Чернівецькій, Закарпатській, Волинській, Житомирській та Хмельницькій областях.',
   },
   {
