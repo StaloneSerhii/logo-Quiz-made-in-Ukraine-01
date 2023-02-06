@@ -1,5 +1,5 @@
 import { help } from '../helper';
-import { level1 } from './levelRend';
+import { level1 } from './extreLevel';
 
 //mp3 
 // const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
