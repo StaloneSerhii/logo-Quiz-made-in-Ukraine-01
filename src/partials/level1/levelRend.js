@@ -30,9 +30,8 @@ const level1 = [
   {
     idName: '4',
     answer: 'рошен',
-    logoHidden:
-      'https://scontent.fifo4-1.fna.fbcdn.net/v/t39.30808-6/328825072_6758354530844487_6145459676921258839_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=m8Y0dzeL9_EAX-l120Z&_nc_ht=scontent.fifo4-1.fna&oh=00_AfB_inyERLyMHtPaHL9K0GC4AU0dxBc6XpWT0uVWx9Tlmg&oe=63E08C52',
-    logo: 'https://scontent.fifo4-1.fna.fbcdn.net/v/t39.30808-6/323438865_1208776870057912_7362953068309026915_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=UfI7K5vDE0kAX-4hvlS&_nc_ht=scontent.fifo4-1.fna&oh=00_AfA10bHi9r60S3E-TKkpxyoMN1yJIq1KjLb9d_0eXC5sBA&oe=63DF4F58',
+    logoHidden: 'https://her-dan.pp.ua/img/roshen.jpg',
+    logo: 'https://her-dan.pp.ua/img/roshen-open.jpg',
     info: 'Конди́терська корпора́ція «Роше́н» — один з найбільших виробників кондитерських виробів в Україні та Східній Європі, входить у тридцятку найбільших виробників кондитерських виробів світу. Головний офіс компанії розташовано у Києві.Назва походить з прізвища її засновника — Петра Порошенка шляхом вилучення першого та останнього складів.',
   },
   {
