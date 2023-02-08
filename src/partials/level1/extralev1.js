@@ -95,9 +95,9 @@ function rendInputu(answerLogoUpCase) {
       nextBt.addEventListener('click', nextBtn);
       backBt.addEventListener('click', backBtn);
       if (numLogo === 0) {
-        backBt.classList += " visually-hidden"
-      } else if (numLogo === 1){
-        nextBt.classList += " visually-hidden"
+        backBt.classList += ' visually-hidden';
+      } else if (numLogo === 8) {
+        nextBt.classList += ' visually-hidden';
       }
     }
   } else {
@@ -123,9 +123,9 @@ function rennLogoInputu(savedSettings, numLogo) {
       nextBt.addEventListener('click', nextBtn);
       backBt.addEventListener('click', backBtn);
       if (numLogo === 0) {
-        backBt.classList += " visually-hidden"
-      } else if (numLogo === 1){
-        nextBt.classList += " visually-hidden"
+        backBt.classList += ' visually-hidden';
+      } else if (numLogo === 8) {
+        nextBt.classList += ' visually-hidden';
       }
     }
   } else {
@@ -140,16 +140,15 @@ function rennLogoInputu(savedSettings, numLogo) {
       const inputSend = document.querySelector('.sendBtn');
       inputSend.addEventListener('submit', listenInput);
 
-
       exHelp(numLogo);
       const nextBt = document.querySelector('.next');
       const backBt = document.querySelector('.back');
       nextBt.addEventListener('click', nextBtn);
       backBt.addEventListener('click', backBtn);
       if (numLogo === 0) {
-        backBt.classList += " visually-hidden"
-      } else if (numLogo === 1){
-        nextBt.classList += " visually-hidden"
+        backBt.classList += ' visually-hidden';
+      } else if (numLogo === 8) {
+        nextBt.classList += ' visually-hidden';
       }
       function listenInput(e) {
         e.preventDefault();
