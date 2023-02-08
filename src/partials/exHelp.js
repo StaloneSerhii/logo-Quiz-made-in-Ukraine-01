@@ -1,8 +1,7 @@
-import { level1 } from './level1/levelRend';
-// import { exLevel1 } from './level1/extralevel'
-import { getMoney } from './level1/rendLogo';
+import { exLevel1 } from './level1/extreLevel'
+import { getMoney } from './level1/extralev1';
  export let hel = 0;
-export function help(params) {
+export function exHelp(params) {
   const helpBtn = document.querySelector('.helper');
   helpBtn.addEventListener('click', helper);
   const inputClass = document.querySelector('.inputClass');
@@ -12,21 +11,20 @@ export function help(params) {
   function helperNext() {
     if (getMoney() >= 25) {
      
-      let backLevel = level1[params].answer;
-      console.log(backLevel);
+      let backLevel = exLevel1[params].answer;
       const getMoneys = getMoney();
       refreshLS(Number(getMoneys) - 25);
       inputClass.value = '';
         inputClass.value += backLevel;
         inputClass.placeholder += backLevel;
-    
+        
     }
   }
 let val ='';
   function helper() {
     if (getMoney() >= 5) {
-      if (level1[params].answer.length >= hel+1) {
-  let backLevel = level1[params].answer.split('');
+      if (exLevel1[params].answer.length >= hel+1) {
+  let backLevel = exLevel1[params].answer.split('');
   const getMoneys = getMoney();
   refreshLS(Number(getMoneys) - 1);
   alert(backLevel[hel]);

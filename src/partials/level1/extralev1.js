@@ -1,7 +1,7 @@
-import { help } from '../helper';
-import { level1 } from './extreLevel';
+import { exHelp } from '../exHelp';
+import { exLevel1 } from './extreLevel';
 
-//mp3 
+//mp3
 // const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
 // const buttons = document.querySelectorAll("body");
 
@@ -11,15 +11,17 @@ import { level1 } from './extreLevel';
 //   });
 // });
 
+// 1)Записл альт номер картинки на яку нажали
+// 2)Перевірка чи є вона в лх
 let numLogo = '';
-let savedSettings =''
+let savedSettings = '';
 // Кнопки в хедері
 const hiddenLevels = document.querySelector('.levelsAll');
 const backHidden = document.querySelector('.back-btn-ref');
 
 // Рендер логотипів рівня \\
 const rend = document.querySelector('.logoList');
-const addRend = rendLogo(level1);
+const addRend = rendLogo(exLevel1);
 rend.insertAdjacentHTML('beforeend', addRend);
 
 // Функція рендеру грошей...
@@ -28,15 +30,14 @@ export function getMoney() {
   return JSON.parse(monneys);
 }
 
-function rendLogo(level1) {
+function rendLogo(exLevel1) {
   const showMonney = document.querySelector('.monney');
   if (getMoney() === null) {
     showMonney.textContent = 0;
   } else {
     showMonney.textContent = getMoney();
   }
-
-  return level1
+  return exLevel1
     .map(({ logoHidden, idName, answer, logo }) => {
       const rendTest = localStorage.getItem(`${answer}`);
       if (rendTest === idName) {
@@ -52,10 +53,10 @@ function rendLogo(level1) {
 
 const logoClick = document.querySelector('.logoList');
 logoClick.addEventListener('click', renderInputLogo);
-
 function renderInputLogo(e) {
-  numLogo = e.target.alt;
-  const { answer } = level1[numLogo];
+  numLogo = e.target.alt - 1000;
+
+  const { answer } = exLevel1[numLogo];
   savedSettings = localStorage.getItem(`${answer}`);
   logoClick.removeEventListener('click', renderInputLogo);
   rennLogoInputu(savedSettings, numLogo);
@@ -63,8 +64,7 @@ function renderInputLogo(e) {
 
 // ренд логотипу і інпуту
 function rendInputu(answerLogoUpCase) {
-
-  const { idName, answer, logo, info } = level1[numLogo];
+  const { idName, answer, logo, info } = exLevel1[numLogo];
 
   if (answerLogoUpCase === answer) {
     const monney = localStorage.getItem('monney');
@@ -94,6 +94,11 @@ function rendInputu(answerLogoUpCase) {
       const backBt = document.querySelector('.back');
       nextBt.addEventListener('click', nextBtn);
       backBt.addEventListener('click', backBtn);
+      if (numLogo === 0) {
+        backBt.classList += " visually-hidden"
+      } else if (numLogo === 1){
+        nextBt.classList += " visually-hidden"
+      }
     }
   } else {
     // Ренд невірної відповіді
@@ -102,10 +107,10 @@ function rendInputu(answerLogoUpCase) {
 }
 
 function rennLogoInputu(savedSettings, numLogo) {
-  const { logoHidden, idName, logo, info } = level1[numLogo];
-  const idname = Number(idName)
+  const { logoHidden, idName, logo, info } = exLevel1[numLogo];
+  const idname = Number(idName);
   if (savedSettings == Number(idname)) {
-    // Ренд правильної відповіді завчасно
+    // Ренд з правильної відповіді завчасно
     backHidden.hidden = false;
     hiddenLevels.hidden = true;
     rendRinghtAnswer();
@@ -117,24 +122,35 @@ function rennLogoInputu(savedSettings, numLogo) {
       const backBt = document.querySelector('.back');
       nextBt.addEventListener('click', nextBtn);
       backBt.addEventListener('click', backBtn);
+      if (numLogo === 0) {
+        backBt.classList += " visually-hidden"
+      } else if (numLogo === 1){
+        nextBt.classList += " visually-hidden"
+      }
     }
   } else {
     // Ренд невизначаної відповіді(інпуту)
     backHidden.hidden = false;
     hiddenLevels.hidden = true;
     rendAnsw();
+
     function rendAnsw() {
       const renderInput = `<div class="logoInput"><div><button class="helper">Буква</button><button class="helper back">< Back</button></div><img src="${logoHidden}" alt="${idName}" width="200px"><div><button  class="helper-twit">Відп.</button><button  class="helper-twit next">Next ></button></div><form class="sendBtn"><input class="inputClass" placeholder="" type="text"><button style="backround-color: grey;" class="btn-answer">Відповідь</button></form></div>`;
       logoClick.innerHTML = ('beforeend', renderInput);
       const inputSend = document.querySelector('.sendBtn');
       inputSend.addEventListener('submit', listenInput);
 
-      help(numLogo);
+
+      exHelp(numLogo);
       const nextBt = document.querySelector('.next');
       const backBt = document.querySelector('.back');
       nextBt.addEventListener('click', nextBtn);
       backBt.addEventListener('click', backBtn);
-
+      if (numLogo === 0) {
+        backBt.classList += " visually-hidden"
+      } else if (numLogo === 1){
+        nextBt.classList += " visually-hidden"
+      }
       function listenInput(e) {
         e.preventDefault();
         let answerLogo = e.target[0].value;
@@ -148,17 +164,16 @@ function rennLogoInputu(savedSettings, numLogo) {
 // btn next back
 
 function nextBtn() {
-
-  numLogo=  Number(numLogo)+1
-  const { answer } = level1[numLogo];
+  numLogo = Number(numLogo) + 1;
+  const { answer } = exLevel1[numLogo];
   savedSettings = localStorage.getItem(`${answer}`);
   logoClick.removeEventListener('click', renderInputLogo);
 
   rennLogoInputu(savedSettings, Number(numLogo));
 }
 function backBtn() {
-  numLogo=  Number(numLogo)-1
-  const { answer } = level1[numLogo];
+  numLogo = Number(numLogo) - 1;
+  const { answer } = exLevel1[numLogo];
   savedSettings = localStorage.getItem(`${answer}`);
   logoClick.removeEventListener('click', renderInputLogo);
   rennLogoInputu(savedSettings, Number(numLogo));

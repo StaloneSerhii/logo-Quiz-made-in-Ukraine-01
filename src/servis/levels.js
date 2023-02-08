@@ -1,3 +1,4 @@
+
 import { level1 } from '../partials/level1/levelRend';
 
 let allLogoBase = level1.length;
@@ -13,3 +14,5 @@ for (let i = 0; i < allLogoBase; i++) {
 
 const title = document.querySelector('.answerLogoLevel');
 title.textContent = `${allAnswerLogo.length}`;
+
+

@@ -94,6 +94,12 @@ function rendInputu(answerLogoUpCase) {
       const backBt = document.querySelector('.back');
       nextBt.addEventListener('click', nextBtn);
       backBt.addEventListener('click', backBtn);
+      if (numLogo === 0) {
+        backBt.classList += " visually-hidden"
+      } else if (numLogo === 10){
+        nextBt.classList += " visually-hidden"
+      }
+      
     }
   } else {
     // Ренд невірної відповіді
@@ -117,6 +123,11 @@ function rennLogoInputu(savedSettings, numLogo) {
       const backBt = document.querySelector('.back');
       nextBt.addEventListener('click', nextBtn);
       backBt.addEventListener('click', backBtn);
+      if (numLogo === 0) {
+        backBt.classList += " visually-hidden"
+      } else if (numLogo === 10){
+        nextBt.classList += " visually-hidden"
+      }
     }
   } else {
     // Ренд невизначаної відповіді(інпуту)
@@ -134,7 +145,11 @@ function rennLogoInputu(savedSettings, numLogo) {
       const backBt = document.querySelector('.back');
       nextBt.addEventListener('click', nextBtn);
       backBt.addEventListener('click', backBtn);
-
+      if (numLogo === 0) {
+        backBt.classList += " visually-hidden"
+      } else if (numLogo === 10){
+        nextBt.classList += " visually-hidden"
+      }
       function listenInput(e) {
         e.preventDefault();
         let answerLogo = e.target[0].value;

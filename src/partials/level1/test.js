@@ -1,4 +1,0 @@
-const addEasy = [{
-}]
-export {addEasy}
-
