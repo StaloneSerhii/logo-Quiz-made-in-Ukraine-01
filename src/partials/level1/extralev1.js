@@ -153,7 +153,7 @@ function rennLogoInputu(savedSettings, numLogo) {
       function listenInput(e) {
         e.preventDefault();
         let answerLogo = e.target[0].value;
-        const answerLogoUpCase = answerLogo.toLowerCase();
+        const answerLogoUpCase = answerLogo.toLowerCase().trimRight();
         rendInputu(answerLogoUpCase);
       }
     }
