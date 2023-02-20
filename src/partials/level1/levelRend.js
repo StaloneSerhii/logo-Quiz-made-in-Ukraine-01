@@ -26,8 +26,8 @@ const level1 = [
     idName: '3',
     answer: 'садочок',
     logoHidden:
-      'https://scontent.fifo4-1.fna.fbcdn.net/v/t39.30808-6/328710150_713006033562468_3955004205653111802_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=iiSIrwkaBoAAX-RWIAg&_nc_ht=scontent.fifo4-1.fna&oh=00_AfD9oLU8zCZqPTvPf8DYzWAZ8rfvxsVAvPy6TR9ZBegz3Q&oe=63E4E396',
-    logo: 'https://scontent.fifo4-1.fna.fbcdn.net/v/t39.30808-6/328673743_2750434581765525_3422849510011979217_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=MQwukWlCRO4AX_tGTfK&_nc_ht=scontent.fifo4-1.fna&oh=00_AfB6GFaPQ1FeuDYbpv-bJH2QDyq9b54G1CQsw7tpTemNfw&oe=63E5CD8A',
+      'https://her-dan.pp.ua/img/saddd.jpg',
+    logo: 'https://her-dan.pp.ua/img/sad.jpg',
     info: 'ТМ «Садочок» — це бренд фруктових та плодоовочевих соків, нектарів, морсів. Виробник  — PepsiCo. Продукція виробляється на заводі з переробки фруктів, овочів та виробництві соків (Миколаївська обл.), заводі з виробництва соків (Миколаївська обл.), двох заводів з переробки фруктів та овочів (Крим та Херсонська обл.).',
   },
   {
@@ -77,9 +77,9 @@ const level1 = [
   {
     idName: '10',
     answer: 'сільпо',
-    logo: 'https://scontent.flwo2-1.fna.fbcdn.net/v/t39.30808-6/321979051_1241667836428974_7617441906914666325_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=mKLTBhqLyKEAX-YYOi0&_nc_ht=scontent.flwo2-1.fna&oh=00_AfCebpspxu9ejagqqkKV0uCBBpHiEafJnFnnjqEfpFTbTw&oe=63E425D4',
+    logo: 'https://piramida.ua/wp-content/uploads/2020/10/65828101_2576381519039408_7776928094962581504_n.png',
     logoHidden:
-      'https://scontent.flwo2-1.fna.fbcdn.net/v/t39.30808-6/329152043_580206814011150_385826954684479096_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=qC1ZTM-liAMAX-L1a1d&tn=cokD2Vnt1Oy3Wifo&_nc_ht=scontent.flwo2-1.fna&oh=00_AfCJKsQYPDcB1Z6NI16aEhIu5CIJ1bUDG5oGDq9BKxJABA&oe=63E478EF',
+      'https://piramida.ua/wp-content/uploads/2020/10/65828101_2576381519039408_7776928094962581504_n.png',
     info: '«Сільпо́» — українська торговельна мережа продовольчих супермаркетів, заснована в 1998. Також здійснює доставку продуктів додому або самовивіз. Належить торговельній корпорації Fozzy Group.  Мережа присутня у 62 містах України (2019). Станом на кінець 2022 року мережа має 296 супермаркетів',
   },
   {
