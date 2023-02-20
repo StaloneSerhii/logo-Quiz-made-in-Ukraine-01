@@ -3,8 +3,8 @@ const level1 = [
     idName: '0',
     answer: 'мівіна',
     logoHidden:
-      'https://scontent.fifo4-1.fna.fbcdn.net/v/t39.30808-6/328696425_504651701591425_682442139963775075_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=XStT_SOsxzwAX9ZxqC2&_nc_oc=AQkYXRHzSujm0xmBSH9Se1s5Z2rPlhT8b-LIMOJPP6rvfwlzMtRmodcLQuNqnv77zk4&_nc_ht=scontent.fifo4-1.fna&oh=00_AfAMJ6j83guX5SXd4hYgckwusee1982zFYCsRdjXRbY_FQ&oe=63E4C3E7',
-    logo: 'https://scontent.fifo4-1.fna.fbcdn.net/v/t39.30808-6/328451124_500768835564531_5334138654413128220_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=75rkE4efDIkAX82jPkW&_nc_ht=scontent.fifo4-1.fna&oh=00_AfANTiD2FvEVcZbeDj4XGYtUCeGTxyGvdWNu4vhshc62qg&oe=63E496A3',
+      'https://her-dan.pp.ua/img/mivina-hiden.jpg',
+    logo: 'https://her-dan.pp.ua/img/mivina.-openjpg.jpg',
     info: 'Мівіна – товарний знак, розроблений у Харкові корпорацією «Техноком», що займається виробництвом харчових напівфабрикатів.«Мівіна» є загальною назвою вермішелі швидкого приготування в українських споживачів',
   },
   {
@@ -18,8 +18,8 @@ const level1 = [
     idName: '2',
     answer: 'опілля',
     logoHidden:
-      'https://scontent.flwo2-1.fna.fbcdn.net/v/t39.30808-6/327010834_691259966028981_6489095128817911222_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=4_usANDc814AX_nxtIk&_nc_ht=scontent.flwo2-1.fna&oh=00_AfAT_duJNcMgq89Lv326yLN6QcyMVdM0lS1GjGoh61yGqQ&oe=63E47955',
-    logo: 'https://scontent.flwo2-1.fna.fbcdn.net/v/t39.30808-6/328146365_5754896334588584_2146856469801665400_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=dQqYFYEsNWYAX_6PA-Z&_nc_ht=scontent.flwo2-1.fna&oh=00_AfBLD50IM5YKJT01N8d7n2SoNAos1CGTr_KLOgB9Rouw7Q&oe=63E43E27',
+      'https://her-dan.pp.ua/img/opil.jpg',
+    logo: 'https://her-dan.pp.ua/img/opil-open.jpg',
     info: 'Тернопільська пивоварня «Опілля» — підприємство, зайняте у галузі виробництва та реалізації пива та квасу. Розташоване у місті Тернополі.',
   },
   {
@@ -41,8 +41,8 @@ const level1 = [
     idName: '5',
     answer: 'атб',
     logoHidden:
-      'https://scontent.fifo4-1.fna.fbcdn.net/v/t39.30808-6/328492883_1316573602526130_8245995088279237042_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=0a9eOvf6HGIAX-TzDNv&_nc_ht=scontent.fifo4-1.fna&oh=00_AfDvrTGXTaVzrk6cGo0MkE8aJl9uClgzXjkgfg0Ox5LoNA&oe=63E4E81F',
-    logo: 'https://scontent.fifo4-1.fna.fbcdn.net/v/t39.30808-6/327133659_4197031340521185_9165908302607212147_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=GBCtSDE0USAAX91PVR1&_nc_ht=scontent.fifo4-1.fna&oh=00_AfBQNj76uQbvoeBfYzpVJlIMN2jU7sa8jgpEoa0n-76MEQ&oe=63E52A26',
+      'https://her-dan.pp.ua/img/atb-hiden.jpg',
+    logo: 'https://her-dan.pp.ua/img/atb.jpg',
     info: '«АТБ-Маркет» (широко відома як «АТБ») — найбільша українська мережа супермаркетів як за товарообігом, так і за числом крамниць, яких у 2021 році мала 1314.',
   },
   {
